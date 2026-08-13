@@ -79,15 +79,9 @@ button{
     gap:40px;
 }
 
-
-/* ========================================
-   LOGO
-======================================== */
-
 .logo{
     display:flex;
     align-items:center;
-
     flex-shrink:0;
 }
 
@@ -95,11 +89,6 @@ button{
     width:190px;
     height:auto;
 }
-
-
-/* ========================================
-   NAVIGATION MENU
-======================================== */
 
 .menu{
     display:flex;
@@ -122,9 +111,7 @@ button{
     letter-spacing:1.2px;
     text-transform:uppercase;
 
-    transition:
-        color .3s ease,
-        opacity .3s ease;
+    transition:.3s;
 }
 
 .menu a::after{
@@ -140,7 +127,7 @@ button{
 
     background:#D8B35C;
 
-    transition:width .3s ease;
+    transition:.3s;
 }
 
 .menu a:hover{
@@ -150,11 +137,6 @@ button{
 .menu a:hover::after{
     width:100%;
 }
-
-
-/* ========================================
-   CONTACT BUTTON
-======================================== */
 
 .nav-btn{
     flex-shrink:0;
@@ -173,10 +155,7 @@ button{
     letter-spacing:1px;
     text-transform:uppercase;
 
-    transition:
-        background .3s ease,
-        color .3s ease,
-        transform .3s ease;
+    transition:.3s;
 }
 
 .nav-btn:hover{
@@ -202,11 +181,6 @@ button{
 
     background:#111111;
 }
-
-
-/* ========================================
-   HERO SLIDES
-======================================== */
 
 .hero-slide{
     position:absolute;
@@ -264,10 +238,7 @@ button{
 
     cursor:pointer;
 
-    transition:
-        width .3s ease,
-        background .3s ease,
-        border-color .3s ease;
+    transition:.3s;
 }
 
 .dot:hover{
@@ -298,7 +269,6 @@ button{
 
 .hero-intro-content{
     max-width:850px;
-
     margin:0 auto;
 }
 
@@ -344,11 +314,6 @@ button{
     line-height:1.8;
 }
 
-
-/* ========================================
-   HERO BUTTONS
-======================================== */
-
 .hero-buttons{
     display:flex;
     align-items:center;
@@ -371,11 +336,7 @@ button{
     letter-spacing:.8px;
     text-transform:uppercase;
 
-    transition:
-        background .3s ease,
-        color .3s ease,
-        border-color .3s ease,
-        transform .3s ease;
+    transition:.3s;
 }
 
 .btn-primary{
@@ -469,11 +430,6 @@ button{
     background:#FFFFFF;
 }
 
-
-/* ========================================
-   PROPERTY GRID
-======================================== */
-
 .property-grid{
     width:100%;
     max-width:1400px;
@@ -486,11 +442,6 @@ button{
     gap:28px;
 }
 
-
-/* ========================================
-   PROPERTY CARD
-======================================== */
-
 .property-card{
     background:#F8F7F4;
 
@@ -498,10 +449,7 @@ button{
 
     overflow:hidden;
 
-    transition:
-        transform .4s ease,
-        box-shadow .4s ease,
-        border-color .4s ease;
+    transition:.4s;
 }
 
 .property-card:hover{
@@ -509,14 +457,8 @@ button{
 
     border-color:#D6C7A2;
 
-    box-shadow:
-        0 22px 45px rgba(0,0,0,0.10);
+    box-shadow:0 22px 45px rgba(0,0,0,0.10);
 }
-
-
-/* ========================================
-   PROPERTY IMAGE
-======================================== */
 
 .property-image{
     position:relative;
@@ -534,17 +476,12 @@ button{
 
     object-fit:cover;
 
-    transition:transform .7s ease;
+    transition:.7s;
 }
 
 .property-card:hover .property-image img{
     transform:scale(1.05);
 }
-
-
-/* ========================================
-   PROPERTY BADGE
-======================================== */
 
 .property-badge{
     position:absolute;
@@ -566,11 +503,6 @@ button{
     letter-spacing:1.5px;
     text-transform:uppercase;
 }
-
-
-/* ========================================
-   PROPERTY CONTENT
-======================================== */
 
 .property-content{
     padding:28px 28px 30px;
@@ -610,14 +542,7 @@ button{
 
     font-size:20px;
     font-weight:700;
-
-    letter-spacing:.3px;
 }
-
-
-/* ========================================
-   PROPERTY DETAILS
-======================================== */
 
 .property-details{
     padding:18px 0;
@@ -650,14 +575,8 @@ button{
 
 .property-details span:last-child{
     border-right:none;
-
     text-align:right;
 }
-
-
-/* ========================================
-   PROPERTY LINK
-======================================== */
 
 .property-link{
     margin-top:24px;
@@ -674,7 +593,7 @@ button{
     letter-spacing:1.3px;
     text-transform:uppercase;
 
-    transition:color .3s ease;
+    transition:.3s;
 }
 
 .property-link span{
@@ -682,7 +601,7 @@ button{
 
     font-size:20px;
 
-    transition:transform .3s ease;
+    transition:.3s;
 }
 
 .property-link:hover{
@@ -692,11 +611,6 @@ button{
 .property-link:hover span{
     transform:translateX(6px);
 }
-
-
-/* ========================================
-   VIEW ALL PROPERTIES
-======================================== */
 
 .properties-action{
     margin-top:55px;
@@ -721,16 +635,11 @@ button{
     letter-spacing:1.3px;
     text-transform:uppercase;
 
-    transition:
-        background .3s ease,
-        border-color .3s ease,
-        color .3s ease,
-        transform .3s ease;
+    transition:.3s;
 }
 
 .all-properties-btn:hover{
     background:#C9A24F;
-
     border-color:#C9A24F;
 
     color:#111111;
@@ -749,11 +658,6 @@ button{
     background:#F5F3EE;
 }
 
-
-/* ========================================
-   AREAS GRID
-======================================== */
-
 .areas-grid{
     width:100%;
     max-width:1400px;
@@ -765,11 +669,6 @@ button{
 
     gap:24px;
 }
-
-
-/* ========================================
-   AREA CARD
-======================================== */
 
 .area-card{
     position:relative;
@@ -793,19 +692,12 @@ button{
 
     object-fit:cover;
 
-    transition:
-        transform .8s ease,
-        filter .5s ease;
+    transition:.8s;
 }
 
 .area-card:hover img{
     transform:scale(1.07);
 }
-
-
-/* ========================================
-   AREA OVERLAY
-======================================== */
 
 .area-overlay{
     position:absolute;
@@ -819,24 +711,7 @@ button{
             rgba(10,18,28,0.20) 50%,
             rgba(10,18,28,0.82) 100%
         );
-
-    transition:background .4s ease;
 }
-
-.area-card:hover .area-overlay{
-    background:
-        linear-gradient(
-            180deg,
-            rgba(10,18,28,0.03) 15%,
-            rgba(10,18,28,0.18) 45%,
-            rgba(10,18,28,0.90) 100%
-        );
-}
-
-
-/* ========================================
-   AREA CONTENT
-======================================== */
 
 .area-content{
     position:absolute;
@@ -871,8 +746,6 @@ button{
 
     font-size:31px;
     font-weight:400;
-
-    line-height:1.15;
 }
 
 .area-content a{
@@ -888,8 +761,6 @@ button{
 
     letter-spacing:1.3px;
     text-transform:uppercase;
-
-    transition:color .3s ease;
 }
 
 .area-content a span{
@@ -897,7 +768,7 @@ button{
 
     font-size:18px;
 
-    transition:transform .3s ease;
+    transition:.3s;
 }
 
 .area-content a:hover{
@@ -906,6 +777,636 @@ button{
 
 .area-content a:hover span{
     transform:translateX(6px);
+}
+
+
+/* ========================================
+   SERVICES
+======================================== */
+
+.services{
+    padding:110px 60px;
+
+    background:#FFFFFF;
+}
+
+.services-grid{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:22px;
+}
+
+.service-card{
+    min-height:390px;
+
+    padding:38px 30px;
+
+    display:flex;
+    flex-direction:column;
+
+    background:#F7F6F2;
+
+    border:1px solid #E7E2D8;
+
+    transition:.35s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#D1BC86;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.service-number{
+    margin-bottom:35px;
+
+    color:#B28A38;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:18px;
+}
+
+.service-card h3{
+    margin-bottom:18px;
+
+    color:#1A1A1A;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:27px;
+    font-weight:400;
+}
+
+.service-card p{
+    margin-bottom:35px;
+
+    color:#717171;
+
+    font-size:15px;
+    line-height:1.8;
+}
+
+.service-card a{
+    margin-top:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    color:#242424;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+}
+
+.service-card a span{
+    color:#B28A38;
+
+    font-size:19px;
+
+    transition:.3s;
+}
+
+.service-card a:hover{
+    color:#B28A38;
+}
+
+.service-card a:hover span{
+    transform:translateX(6px);
+}
+
+.featured-service{
+    background:#132230;
+    border-color:#132230;
+}
+
+.featured-service .service-number{
+    color:#D9B65F;
+}
+
+.featured-service h3{
+    color:#FFFFFF;
+}
+
+.featured-service p{
+    color:#C7CDD2;
+}
+
+.featured-service a{
+    color:#FFFFFF;
+}
+
+.featured-service a span{
+    color:#D9B65F;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about{
+    padding:120px 60px;
+
+    background:#F5F3EE;
+}
+
+.about-container{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+
+    gap:80px;
+
+    align-items:center;
+}
+
+.about-image{
+    position:relative;
+
+    min-height:620px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.10);
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+
+    min-height:620px;
+
+    object-fit:cover;
+
+    transition:.8s;
+}
+
+.about-image:hover img{
+    transform:scale(1.035);
+}
+
+.about-content{
+    max-width:570px;
+}
+
+.about-content h2{
+    margin-bottom:28px;
+
+    color:#1A1A1A;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:55px;
+    font-weight:400;
+
+    line-height:1.08;
+}
+
+.about-content h2 span{
+    display:block;
+
+    color:#B28A38;
+}
+
+.about-text{
+    margin-bottom:20px;
+
+    color:#6D6D6D;
+
+    font-size:16px;
+    line-height:1.85;
+}
+
+.about-stats{
+    margin:38px 0 40px;
+
+    padding:28px 0;
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+
+    border-top:1px solid #D8D3C8;
+    border-bottom:1px solid #D8D3C8;
+}
+
+.stat{
+    padding:0 20px;
+
+    text-align:center;
+
+    border-right:1px solid #D8D3C8;
+}
+
+.stat:last-child{
+    border-right:none;
+}
+
+.stat strong{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#172331;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:34px;
+    font-weight:400;
+}
+
+.stat span{
+    display:block;
+
+    color:#777777;
+
+    font-size:10px;
+    font-weight:700;
+
+    line-height:1.4;
+
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.about-btn{
+    display:inline-block;
+
+    padding:15px 28px;
+
+    background:#172331;
+
+    border:1px solid #172331;
+
+    color:#FFFFFF;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+
+    transition:.3s;
+}
+
+.about-btn:hover{
+    background:#C9A24F;
+
+    border-color:#C9A24F;
+
+    color:#111111;
+
+    transform:translateY(-2px);
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact{
+    padding:120px 60px;
+
+    background:#101D29;
+}
+
+.contact-container{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+
+    gap:80px;
+
+    align-items:start;
+}
+
+.contact-info .section-label{
+    color:#D8B35C;
+}
+
+.contact-info h2{
+    margin-bottom:26px;
+
+    color:#FFFFFF;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:56px;
+    font-weight:400;
+
+    line-height:1.08;
+}
+
+.contact-info h2 span{
+    display:block;
+
+    color:#D8B35C;
+}
+
+.contact-text{
+    max-width:500px;
+
+    margin-bottom:42px;
+
+    color:#BBC2C7;
+
+    font-size:16px;
+    line-height:1.85;
+}
+
+.contact-details{
+    display:grid;
+
+    gap:26px;
+}
+
+.contact-item{
+    padding-bottom:22px;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.contact-item-label{
+    margin-bottom:7px;
+
+    color:#D8B35C;
+
+    font-size:10px;
+    font-weight:700;
+
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.contact-item p:last-child{
+    color:#F1F1F1;
+
+    font-size:15px;
+}
+
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+
+.contact-form-wrapper{
+    padding:45px;
+
+    background:#F8F6F1;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+.contact-form{
+    width:100%;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:20px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#3E3E3E;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:.8px;
+    text-transform:uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+
+    padding:14px 15px;
+
+    border:1px solid #D8D2C6;
+
+    background:#FFFFFF;
+
+    color:#222222;
+
+    font-family:inherit;
+    font-size:14px;
+
+    outline:none;
+
+    transition:.25s;
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#C9A24F;
+
+    box-shadow:0 0 0 3px rgba(201,162,79,.12);
+}
+
+.contact-submit{
+    width:100%;
+
+    padding:16px 28px;
+
+    border:1px solid #172331;
+
+    background:#172331;
+
+    color:#FFFFFF;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.contact-submit:hover{
+    background:#C9A24F;
+
+    border-color:#C9A24F;
+
+    color:#111111;
+
+    transform:translateY(-2px);
+}
+
+.form-message{
+    margin-top:18px;
+
+    text-align:center;
+
+    font-size:13px;
+    font-weight:700;
+}
+
+.form-message.success{
+    color:#5E7D58;
+}
+
+.form-message.error{
+    color:#A85C5C;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer{
+    background:#0B141D;
+
+    color:#C7CDD2;
+
+    padding:80px 60px 0;
+}
+
+.footer-container{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:1.6fr 1fr 1fr 1.2fr;
+
+    gap:60px;
+
+    padding-bottom:55px;
+}
+
+
+/* Footer Brand */
+
+.footer-brand{
+    max-width:360px;
+}
+
+.footer-logo{
+    display:inline-block;
+
+    margin-bottom:24px;
+}
+
+.footer-logo img{
+    width:210px;
+    height:auto;
+}
+
+.footer-brand p{
+    color:#AEB6BC;
+
+    font-size:14px;
+    line-height:1.8;
+}
+
+
+/* Footer Columns */
+
+.footer-column h3{
+    margin-bottom:22px;
+
+    color:#FFFFFF;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:18px;
+    font-weight:400;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column li{
+    margin-bottom:12px;
+}
+
+.footer-column a{
+    color:#AEB6BC;
+
+    font-size:14px;
+
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#D8B35C;
+}
+
+.footer-contact p{
+    margin-bottom:12px;
+
+    color:#AEB6BC;
+
+    font-size:14px;
+    line-height:1.6;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    padding:24px 0;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+
+    border-top:1px solid rgba(255,255,255,.10);
+}
+
+.footer-bottom p{
+    color:#858F96;
+
+    font-size:12px;
 }
 
 
@@ -939,9 +1440,6 @@ button{
         font-size:12px;
     }
 
-
-    /* Hero */
-
     .hero{
         height:65vh;
         min-height:500px;
@@ -955,34 +1453,33 @@ button{
         font-size:54px;
     }
 
-
-    /* Properties */
-
-    .properties{
-        padding:90px 30px;
+    .properties,
+    .areas,
+    .services,
+    .about,
+    .contact{
+        padding-left:30px;
+        padding-right:30px;
     }
 
-    .property-grid{
+    .property-grid,
+    .areas-grid,
+    .services-grid{
         grid-template-columns:repeat(2, 1fr);
     }
 
-    .property-image{
-        height:330px;
+    .about-container,
+    .contact-container{
+        gap:45px;
     }
 
-
-    /* Areas */
-
-    .areas{
-        padding:90px 30px;
+    .about-content h2,
+    .contact-info h2{
+        font-size:46px;
     }
 
-    .areas-grid{
+    .footer-container{
         grid-template-columns:repeat(2, 1fr);
-    }
-
-    .area-card{
-        height:480px;
     }
 
 }
@@ -994,17 +1491,12 @@ button{
 
 @media (max-width:760px){
 
-    /* Header */
-
     .site-header{
         background:rgba(10, 24, 40, 0.12);
 
         backdrop-filter:blur(5px);
         -webkit-backdrop-filter:blur(5px);
     }
-
-
-    /* Navbar */
 
     .navbar{
         min-height:auto;
@@ -1036,36 +1528,17 @@ button{
         display:none;
     }
 
-
-    /* Hero */
-
     .hero{
         height:60vh;
         min-height:430px;
     }
 
-    .hero-slide{
-        background-position:center;
-    }
-
-
-    /* Slider */
-
     .slider-controls{
         min-height:52px;
     }
 
-
-    /* Hero Intro */
-
     .hero-intro{
         padding:70px 22px 80px;
-    }
-
-    .hero-label{
-        font-size:11px;
-
-        letter-spacing:3px;
     }
 
     .hero-intro h1{
@@ -1074,8 +1547,6 @@ button{
 
     .hero-description{
         font-size:17px;
-
-        line-height:1.7;
     }
 
     .hero-buttons{
@@ -1088,9 +1559,6 @@ button{
         max-width:300px;
     }
 
-
-    /* Shared Heading */
-
     .section-heading{
         margin-bottom:45px;
     }
@@ -1099,50 +1567,99 @@ button{
         font-size:42px;
     }
 
-    .section-description{
-        font-size:16px;
+    .property-grid,
+    .areas-grid,
+    .services-grid{
+        grid-template-columns:1fr;
     }
 
-
-    /* Properties */
-
-    .properties{
+    .properties,
+    .areas,
+    .services,
+    .about,
+    .contact{
         padding:75px 20px;
     }
 
-    .property-grid{
+    .about-container,
+    .contact-container{
         grid-template-columns:1fr;
 
-        gap:30px;
+        gap:45px;
     }
 
-    .property-image{
-        height:300px;
+    .about-image{
+        min-height:440px;
     }
 
-    .property-content h3{
-        min-height:auto;
+    .about-image img{
+        min-height:440px;
     }
 
+    .about-content{
+        max-width:100%;
 
-    /* Areas */
-
-    .areas{
-        padding:75px 20px;
+        text-align:center;
     }
 
-    .areas-grid{
+    .about-content h2,
+    .contact-info h2{
+        font-size:42px;
+    }
+
+    .contact-info{
+        text-align:center;
+    }
+
+    .contact-text{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .contact-details{
+        max-width:480px;
+
+        margin:0 auto;
+    }
+
+    .contact-form-wrapper{
+        padding:32px 24px;
+    }
+
+    .form-row{
         grid-template-columns:1fr;
 
-        gap:24px;
+        gap:0;
     }
 
-    .area-card{
-        height:420px;
+    .site-footer{
+        padding:65px 22px 0;
     }
 
-    .area-content{
-        padding:30px 25px;
+    .footer-container{
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        text-align:center;
+    }
+
+    .footer-brand{
+        max-width:420px;
+
+        margin:0 auto;
+    }
+
+    .footer-logo img{
+        width:200px;
+
+        margin:0 auto;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+
+        text-align:center;
     }
 
 }
@@ -1168,12 +1685,7 @@ button{
 
     .menu a{
         font-size:10px;
-
-        letter-spacing:.8px;
     }
-
-
-    /* Hero */
 
     .hero{
         height:52vh;
@@ -1188,61 +1700,55 @@ button{
         font-size:38px;
     }
 
-    .hero-description{
-        font-size:16px;
-    }
-
-
-    /* Shared Heading */
-
     .section-heading h2{
         font-size:36px;
     }
 
-
-    /* Properties */
-
-    .properties{
+    .properties,
+    .areas,
+    .services,
+    .about,
+    .contact{
         padding:65px 16px;
     }
 
-    .property-image{
-        height:250px;
+    .about-image{
+        min-height:330px;
     }
 
-    .property-content{
-        padding:24px 20px 26px;
+    .about-image img{
+        min-height:330px;
     }
 
-    .property-content h3{
-        font-size:23px;
+    .about-content h2,
+    .contact-info h2{
+        font-size:36px;
     }
 
-    .property-price{
-        font-size:18px;
+    .about-stats{
+        grid-template-columns:1fr;
+
+        gap:22px;
     }
 
-    .property-details{
-        font-size:11px;
+    .stat{
+        padding:0 0 22px;
+
+        border-right:none;
+
+        border-bottom:1px solid #D8D3C8;
     }
 
-
-    /* Areas */
-
-    .areas{
-        padding:65px 16px;
+    .stat:last-child{
+        border-bottom:none;
     }
 
-    .area-card{
-        height:360px;
+    .contact-form-wrapper{
+        padding:26px 18px;
     }
 
-    .area-content{
-        padding:25px 20px;
-    }
-
-    .area-content h3{
-        font-size:27px;
+    .site-footer{
+        padding:55px 16px 0;
     }
 
 }
