@@ -1,0 +1,1248 @@
+/* ========================================
+   DUBAI PRIME ESTATES
+   Main Stylesheet
+======================================== */
+
+
+/* ========================================
+   RESET / BASE
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F5F3EE;
+    color:#181818;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    font:inherit;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.site-header{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(10, 24, 40, 0.05);
+
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+
+    border-bottom:1px solid rgba(255,255,255,0.10);
+
+    z-index:1000;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar{
+    width:100%;
+    max-width:1400px;
+    min-height:100px;
+
+    margin:0 auto;
+    padding:0 60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:40px;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+
+    flex-shrink:0;
+}
+
+.logo img{
+    width:190px;
+    height:auto;
+}
+
+
+/* ========================================
+   NAVIGATION MENU
+======================================== */
+
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:34px;
+
+    list-style:none;
+}
+
+.menu a{
+    position:relative;
+
+    color:#FFFFFF;
+
+    font-size:13px;
+    font-weight:600;
+
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+
+    transition:
+        color .3s ease,
+        opacity .3s ease;
+}
+
+.menu a::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+    height:1px;
+
+    background:#D8B35C;
+
+    transition:width .3s ease;
+}
+
+.menu a:hover{
+    color:#D8B35C;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
+
+/* ========================================
+   CONTACT BUTTON
+======================================== */
+
+.nav-btn{
+    flex-shrink:0;
+
+    padding:13px 25px;
+
+    border:1px solid #D8B35C;
+
+    color:#D8B35C;
+
+    background:rgba(0,0,0,0.10);
+
+    font-size:13px;
+    font-weight:700;
+
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.nav-btn:hover{
+    background:#D8B35C;
+    color:#111111;
+
+    transform:translateY(-2px);
+}
+
+
+/* ========================================
+   HERO SLIDER
+======================================== */
+
+.hero{
+    position:relative;
+
+    width:100%;
+    height:72vh;
+    min-height:580px;
+
+    overflow:hidden;
+
+    background:#111111;
+}
+
+
+/* ========================================
+   HERO SLIDES
+======================================== */
+
+.hero-slide{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    opacity:0;
+
+    transform:scale(1.04);
+
+    transition:
+        opacity 1.2s ease,
+        transform 6s ease;
+}
+
+.hero-slide.active{
+    opacity:1;
+    transform:scale(1);
+}
+
+
+/* ========================================
+   SLIDER CONTROLS
+======================================== */
+
+.slider-controls{
+    width:100%;
+    min-height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    background:#0D1822;
+}
+
+.dot{
+    width:9px;
+    height:9px;
+
+    padding:0;
+
+    border:1px solid #D8B35C;
+    border-radius:50%;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    transition:
+        width .3s ease,
+        background .3s ease,
+        border-color .3s ease;
+}
+
+.dot:hover{
+    background:#D8B35C;
+}
+
+.dot.active{
+    width:34px;
+
+    border-radius:10px;
+
+    background:#D8B35C;
+    border-color:#D8B35C;
+}
+
+
+/* ========================================
+   HERO INTRODUCTION
+======================================== */
+
+.hero-intro{
+    padding:95px 40px 105px;
+
+    background:#F5F3EE;
+
+    text-align:center;
+}
+
+.hero-intro-content{
+    max-width:850px;
+
+    margin:0 auto;
+}
+
+.hero-label{
+    margin-bottom:22px;
+
+    color:#B28A38;
+
+    font-size:13px;
+    font-weight:700;
+
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.hero-intro h1{
+    margin-bottom:28px;
+
+    color:#181818;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:64px;
+    font-weight:400;
+
+    line-height:1.05;
+}
+
+.hero-intro h1 span{
+    display:block;
+
+    color:#B28A38;
+}
+
+.hero-description{
+    max-width:680px;
+
+    margin:0 auto 35px;
+
+    color:#656565;
+
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-buttons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    display:inline-block;
+
+    padding:15px 30px;
+
+    font-size:13px;
+    font-weight:700;
+
+    letter-spacing:.8px;
+    text-transform:uppercase;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.btn-primary{
+    background:#C9A24F;
+
+    border:1px solid #C9A24F;
+
+    color:#111111;
+}
+
+.btn-primary:hover{
+    background:#DBBA70;
+    border-color:#DBBA70;
+
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    background:transparent;
+
+    border:1px solid #242424;
+
+    color:#242424;
+}
+
+.btn-secondary:hover{
+    background:#242424;
+
+    color:#FFFFFF;
+
+    transform:translateY(-2px);
+}
+
+
+/* ========================================
+   SHARED SECTION HEADING
+======================================== */
+
+.section-heading{
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+}
+
+.section-label{
+    margin-bottom:16px;
+
+    color:#B28A38;
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    margin-bottom:20px;
+
+    color:#181818;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:52px;
+    font-weight:400;
+
+    line-height:1.1;
+}
+
+.section-description{
+    max-width:620px;
+
+    margin:0 auto;
+
+    color:#777777;
+
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+/* ========================================
+   FEATURED PROPERTIES
+======================================== */
+
+.properties{
+    padding:110px 60px;
+
+    background:#FFFFFF;
+}
+
+
+/* ========================================
+   PROPERTY GRID
+======================================== */
+
+.property-grid{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:28px;
+}
+
+
+/* ========================================
+   PROPERTY CARD
+======================================== */
+
+.property-card{
+    background:#F8F7F4;
+
+    border:1px solid #E8E5DE;
+
+    overflow:hidden;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+.property-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#D6C7A2;
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,0.10);
+}
+
+
+/* ========================================
+   PROPERTY IMAGE
+======================================== */
+
+.property-image{
+    position:relative;
+
+    height:310px;
+
+    overflow:hidden;
+
+    background:#EAEAEA;
+}
+
+.property-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .7s ease;
+}
+
+.property-card:hover .property-image img{
+    transform:scale(1.05);
+}
+
+
+/* ========================================
+   PROPERTY BADGE
+======================================== */
+
+.property-badge{
+    position:absolute;
+
+    top:20px;
+    left:20px;
+
+    padding:9px 14px;
+
+    background:rgba(10, 24, 40, 0.88);
+
+    color:#E2BE69;
+
+    border:1px solid rgba(216,179,92,0.55);
+
+    font-size:10px;
+    font-weight:700;
+
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+
+/* ========================================
+   PROPERTY CONTENT
+======================================== */
+
+.property-content{
+    padding:28px 28px 30px;
+}
+
+.property-location{
+    margin-bottom:10px;
+
+    color:#B28A38;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.property-content h3{
+    min-height:58px;
+
+    margin-bottom:14px;
+
+    color:#1D1D1D;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:25px;
+    font-weight:400;
+
+    line-height:1.25;
+}
+
+.property-price{
+    margin-bottom:22px;
+
+    color:#172331;
+
+    font-size:20px;
+    font-weight:700;
+
+    letter-spacing:.3px;
+}
+
+
+/* ========================================
+   PROPERTY DETAILS
+======================================== */
+
+.property-details{
+    padding:18px 0;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:10px;
+
+    border-top:1px solid #DDD9D0;
+    border-bottom:1px solid #DDD9D0;
+
+    color:#686868;
+
+    font-size:12px;
+}
+
+.property-details span{
+    flex:1;
+
+    text-align:center;
+
+    border-right:1px solid #DDD9D0;
+}
+
+.property-details span:first-child{
+    text-align:left;
+}
+
+.property-details span:last-child{
+    border-right:none;
+
+    text-align:right;
+}
+
+
+/* ========================================
+   PROPERTY LINK
+======================================== */
+
+.property-link{
+    margin-top:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    color:#242424;
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+
+    transition:color .3s ease;
+}
+
+.property-link span{
+    color:#B28A38;
+
+    font-size:20px;
+
+    transition:transform .3s ease;
+}
+
+.property-link:hover{
+    color:#B28A38;
+}
+
+.property-link:hover span{
+    transform:translateX(6px);
+}
+
+
+/* ========================================
+   VIEW ALL PROPERTIES
+======================================== */
+
+.properties-action{
+    margin-top:55px;
+
+    text-align:center;
+}
+
+.all-properties-btn{
+    display:inline-block;
+
+    padding:16px 32px;
+
+    background:#172331;
+
+    border:1px solid #172331;
+
+    color:#FFFFFF;
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.all-properties-btn:hover{
+    background:#C9A24F;
+
+    border-color:#C9A24F;
+
+    color:#111111;
+
+    transform:translateY(-2px);
+}
+
+
+/* ========================================
+   EXPLORE DUBAI / AREAS
+======================================== */
+
+.areas{
+    padding:110px 60px;
+
+    background:#F5F3EE;
+}
+
+
+/* ========================================
+   AREAS GRID
+======================================== */
+
+.areas-grid{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:24px;
+}
+
+
+/* ========================================
+   AREA CARD
+======================================== */
+
+.area-card{
+    position:relative;
+
+    height:520px;
+
+    overflow:hidden;
+
+    background:#172331;
+
+    cursor:pointer;
+}
+
+.area-card img{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .8s ease,
+        filter .5s ease;
+}
+
+.area-card:hover img{
+    transform:scale(1.07);
+}
+
+
+/* ========================================
+   AREA OVERLAY
+======================================== */
+
+.area-overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,18,28,0.05) 20%,
+            rgba(10,18,28,0.20) 50%,
+            rgba(10,18,28,0.82) 100%
+        );
+
+    transition:background .4s ease;
+}
+
+.area-card:hover .area-overlay{
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,18,28,0.03) 15%,
+            rgba(10,18,28,0.18) 45%,
+            rgba(10,18,28,0.90) 100%
+        );
+}
+
+
+/* ========================================
+   AREA CONTENT
+======================================== */
+
+.area-content{
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    z-index:2;
+
+    padding:35px 32px;
+}
+
+.area-content p{
+    margin-bottom:10px;
+
+    color:#E3BD65;
+
+    font-size:10px;
+    font-weight:700;
+
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.area-content h3{
+    margin-bottom:18px;
+
+    color:#FFFFFF;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:31px;
+    font-weight:400;
+
+    line-height:1.15;
+}
+
+.area-content a{
+    display:inline-flex;
+    align-items:center;
+
+    gap:12px;
+
+    color:#FFFFFF;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+
+    transition:color .3s ease;
+}
+
+.area-content a span{
+    color:#E3BD65;
+
+    font-size:18px;
+
+    transition:transform .3s ease;
+}
+
+.area-content a:hover{
+    color:#E3BD65;
+}
+
+.area-content a:hover span{
+    transform:translateX(6px);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width:1100px){
+
+    .navbar{
+        padding:0 30px;
+
+        gap:25px;
+    }
+
+    .logo img{
+        width:165px;
+    }
+
+    .menu{
+        gap:18px;
+    }
+
+    .menu a{
+        font-size:12px;
+    }
+
+    .nav-btn{
+        padding:11px 18px;
+
+        font-size:12px;
+    }
+
+
+    /* Hero */
+
+    .hero{
+        height:65vh;
+        min-height:500px;
+    }
+
+    .hero-intro{
+        padding:80px 30px 90px;
+    }
+
+    .hero-intro h1{
+        font-size:54px;
+    }
+
+
+    /* Properties */
+
+    .properties{
+        padding:90px 30px;
+    }
+
+    .property-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .property-image{
+        height:330px;
+    }
+
+
+    /* Areas */
+
+    .areas{
+        padding:90px 30px;
+    }
+
+    .areas-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .area-card{
+        height:480px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width:760px){
+
+    /* Header */
+
+    .site-header{
+        background:rgba(10, 24, 40, 0.12);
+
+        backdrop-filter:blur(5px);
+        -webkit-backdrop-filter:blur(5px);
+    }
+
+
+    /* Navbar */
+
+    .navbar{
+        min-height:auto;
+
+        padding:18px 20px;
+
+        flex-direction:column;
+
+        gap:16px;
+    }
+
+    .logo img{
+        width:170px;
+    }
+
+    .menu{
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:16px;
+    }
+
+    .menu a{
+        font-size:11px;
+    }
+
+    .nav-btn{
+        display:none;
+    }
+
+
+    /* Hero */
+
+    .hero{
+        height:60vh;
+        min-height:430px;
+    }
+
+    .hero-slide{
+        background-position:center;
+    }
+
+
+    /* Slider */
+
+    .slider-controls{
+        min-height:52px;
+    }
+
+
+    /* Hero Intro */
+
+    .hero-intro{
+        padding:70px 22px 80px;
+    }
+
+    .hero-label{
+        font-size:11px;
+
+        letter-spacing:3px;
+    }
+
+    .hero-intro h1{
+        font-size:44px;
+    }
+
+    .hero-description{
+        font-size:17px;
+
+        line-height:1.7;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        max-width:300px;
+    }
+
+
+    /* Shared Heading */
+
+    .section-heading{
+        margin-bottom:45px;
+    }
+
+    .section-heading h2{
+        font-size:42px;
+    }
+
+    .section-description{
+        font-size:16px;
+    }
+
+
+    /* Properties */
+
+    .properties{
+        padding:75px 20px;
+    }
+
+    .property-grid{
+        grid-template-columns:1fr;
+
+        gap:30px;
+    }
+
+    .property-image{
+        height:300px;
+    }
+
+    .property-content h3{
+        min-height:auto;
+    }
+
+
+    /* Areas */
+
+    .areas{
+        padding:75px 20px;
+    }
+
+    .areas-grid{
+        grid-template-columns:1fr;
+
+        gap:24px;
+    }
+
+    .area-card{
+        height:420px;
+    }
+
+    .area-content{
+        padding:30px 25px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width:480px){
+
+    .navbar{
+        padding:15px;
+    }
+
+    .logo img{
+        width:155px;
+    }
+
+    .menu{
+        gap:11px;
+    }
+
+    .menu a{
+        font-size:10px;
+
+        letter-spacing:.8px;
+    }
+
+
+    /* Hero */
+
+    .hero{
+        height:52vh;
+        min-height:380px;
+    }
+
+    .hero-intro{
+        padding:60px 18px 70px;
+    }
+
+    .hero-intro h1{
+        font-size:38px;
+    }
+
+    .hero-description{
+        font-size:16px;
+    }
+
+
+    /* Shared Heading */
+
+    .section-heading h2{
+        font-size:36px;
+    }
+
+
+    /* Properties */
+
+    .properties{
+        padding:65px 16px;
+    }
+
+    .property-image{
+        height:250px;
+    }
+
+    .property-content{
+        padding:24px 20px 26px;
+    }
+
+    .property-content h3{
+        font-size:23px;
+    }
+
+    .property-price{
+        font-size:18px;
+    }
+
+    .property-details{
+        font-size:11px;
+    }
+
+
+    /* Areas */
+
+    .areas{
+        padding:65px 16px;
+    }
+
+    .area-card{
+        height:360px;
+    }
+
+    .area-content{
+        padding:25px 20px;
+    }
+
+    .area-content h3{
+        font-size:27px;
+    }
+
+}
